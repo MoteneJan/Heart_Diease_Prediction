@@ -1,6 +1,6 @@
 # 🫀 Heart Disease Prediction App
 
-This repository contains a machine learning application built with **Streamlit** to predict the likelihood of heart disease based on clinical data.
+This repository contains a machine learning project to predict the likelihood of heart disease based on clinical data.
 
 The app leverages data science tools and machine learning algorithms to classify patients into two categories: **with heart disease** or **without heart disease**, based on 13 medical attributes.
 
@@ -10,14 +10,9 @@ The app leverages data science tools and machine learning algorithms to classify
 
 ```
 heart-disease-prediction/
-│
-├── streamlit_app.py                 # Streamlit application
+│  
 ├── Heart_Disease_Dataset.csv        # Dataset used
 ├── Heart_Disease_Prediction.ipynb   # Jupyter Notebook used to train the Models
-├── knn_model.pkl                    # Trained KNN model
-├── svc_model.pkl                    # Trained Support Vector Classifier model
-├── dt_model.pkl                     # Trained Decision Tree model
-├── rf_model.pkl                     # Trained Random Forest model
 ├── requirements.txt                 # List of dependencies
 └── README.md                        # Project documentation
 ```
@@ -68,23 +63,6 @@ Each model was trained on a processed dataset and evaluated for accuracy using t
    pip install -r requirements.txt
    ```
 
-### ▶️ Run the App
-
-```bash
-streamlit run streamlit_app.py
-```
-
----
-
-## 🛠 App Functionality (Streamlit Pages)
-
-| Page        | Description                                                                 |
-|-------------|-----------------------------------------------------------------------------|
-| **Home**    | Overview of the dataset, statistics, and visuals.                           |
-| **EDA**     | Plots: Correlation matrix, histograms, and pairplots.                       |
-| **Models**  | Compares all trained models based on accuracy.                              |
-| **Predict** | User inputs clinical data to predict heart disease using best model(s).     |
-
 ---
 
 ## 📊 Dataset Info
@@ -94,14 +72,6 @@ streamlit run streamlit_app.py
 - **Features:** 13 + 1 target
 - **Target:** Binary classification (0 = No Disease, 1 = Disease)
 
----
-
-## 💾 Model Saving
-
-All final models were saved using `pickle`:
-```python
-pickle.dump(model, open("model_name.pkl", "wb"))
-```
 
 ---
 
@@ -127,5 +97,3 @@ pickle.dump(model, open("model_name.pkl", "wb"))
 _Data Science & Software Development Enthusiast_  
 
 ---
-
-Let me know if you want me to help write the `streamlit_app.py` or the `requirements.txt` too!
